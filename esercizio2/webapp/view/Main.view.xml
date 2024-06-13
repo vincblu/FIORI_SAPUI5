@@ -1,8 +1,25 @@
 <mvc:View 
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:core="sap.ui.core"
     xmlns:semantic="sap.f.semantic"
+    xmlns:l="sap.ui.layout"
     controllerName="festinante.corso.esercizio2.controller.Main">
 
-    <Button id= "btn" text="Premi" press="pressbutton"/>
+  
+    
+        <Text id="txt1" text="Ciao" />
+        <Button id= "btn" text="Premi" press="pressbutton"/>
+
+        <ComboBox id="comb1" items="{/dati}" selectionChange="onSelectionChange">
+          <items>
+            <core:Item id="it1" text="{cliente}"></core:Item>
+          </items>
+        </ComboBox>    
+        <List id="list1" items="{team}">
+          <items>
+            <StandardListItem id="st1" title="nome"> </StandardListItem>
+          </items>
+        </List>
+
 </mvc:View>

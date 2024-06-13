@@ -1,0 +1,22 @@
+<mvc:View controllerName="corsofiori.esercizio4.esercizio4.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+    >
+    <Page id="page" title="{i18n>title}">
+      <l:VerticalLayout id="VL1" class="sapUiContentPadding"> 
+        <Text id="tex1" text="{/name}"/>
+        <Label id="lab2"  labelFor="inp1"  text="Nome"/>
+        <Input id="inp1" value="{/name}" enabled="{/enabled}"></Input>
+        <CheckBox id="chk1" selected="{/enabled}"></CheckBox>
+        <List id="list1" items="{/lista}">
+          <items>  
+          <StandardListItem id="Name" title="{nome}" description="{cognome}" />
+          </items>
+        </List>
+      </l:VerticalLayout>
+
+    </Page>
+
+
+</mvc:View>

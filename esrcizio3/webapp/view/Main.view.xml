@@ -1,0 +1,18 @@
+<mvc:View 
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:semantic="sap.f.semantic"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    controllerName="festinante.corsofiori.esrcizio3.controller.Main">
+
+  
+       <!--<m:Button id= "btn" text="Premi" press="pressbutton"/> !-->
+       <mvc:content>
+        <Input id="isText1" value="{/element1}" />
+        <Input id="isText2" value="{/element2}" />
+        <Input id="isText3" value="{/element3}" />
+        </mvc:content>
+
+
+</mvc:View>

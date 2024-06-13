@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns="sap.m" controllerName="corso.fiori.esercizio1.controller.Main">
+    <Page id="page" title="{i18n>title}">
+
+ 
+    <content>
+
+ 
+        <l:VerticalLayout width="100%" id="layout0">
+
+ 
+            <l:content>
+
+ 
+                <Button xmlns="sap.m" text="Button" id="button0" icon="sap-icon://account"/>
+
+ 
+                <Label text="Testo di Prova" width="100%" id="label0"/>
+
+ 
+            </l:content>
+
+ 
+        </l:VerticalLayout>
+
+ 
+    </content>
+
+ 
+    </Page>
+</mvc:View>

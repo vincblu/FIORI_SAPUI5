@@ -13,27 +13,35 @@
     <script
         id="sap-ui-bootstrap"
         src="resources/sap-ui-core.js"
-        data-sap-ui-libs = "sap.m"
-        data-sap-ui-libs = "sap.ui.layout"
-        data-sap-ui-libs = "sap.ui.list"        
         data-sap-ui-theme="sap_horizon"
         data-sap-ui-resourceroots='{
-            "festinante.corso.esercizio2": "./"
+            "festinante.corsofiori.esrcizio3": "./"
         }'
         data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
         data-sap-ui-compatVersion="edge"
         data-sap-ui-async="true"
         data-sap-ui-frameOptions="trusted"
     ></script>
+    <script>
 
+        sap.ui.getCore().attachInit( function() {
+            
+           view.create( { idView: "View1",
+                          viewName: "festinante.corsofiori.esrcizio3.view.Main",
+                          type: "XML"
+                        }).then( function(oView){ oView.placeAt("content"); } );
 
+        
+        });
+        
+        </script>
 </head>
 <body class="sapUiBody sapUiSizeCompact" id="content">
     <div
         data-sap-ui-component
-        data-name="festinante.corso.esercizio2"
+        data-name="festinante.corsofiori.esrcizio3"
         data-id="container"
-        data-settings='{"id" : "festinante.corso.esercizio2"}'
+        data-settings='{"id" : "festinante.corsofiori.esrcizio3"}'
         data-handle-validation="true"
     ></div>
 </body>
